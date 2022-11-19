@@ -10,5 +10,6 @@ function setPrikol(src){
 }
 
 btn.addEventListener('click', () => {
-    setPrikol('QDEq5wB5NQ4.jpg')
+    setPrikol('xuy.jpg')
+    btn.classList.add('fixed')
 })
