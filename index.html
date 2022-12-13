@@ -32,16 +32,46 @@
             <div class="pop-up-container">
                 <div class="pop-up-body-signin">
                     <p>Вход prikoli77</p>
-                    <form action="">
-                        <input type="text" placeholder="Логин">
-                        <input type="text" placeholder="Пароль">
-                        <button class="login">Войти</button>
+                    <form onsubmit="return false;"  action="" id="signin_form">
+                        <input type="text" placeholder="Логин" id="signin_login">
+                        <input type="text" placeholder="Пароль" id="signin_pass">
+                        <button class="login" id="signin_btn">Войти</button>
                     </form>
                     <div class="pop-up-body-signin-close">&#10006</div>
+                    <div class="reg__ok hiden" id="signin__ok">
+                        <p>Вход выполнен успешно, пожалуйста перезагрузите страницу =)</p>
+                    </div>
                 </div>
                 <div class="pop-up-body-signup">
-                    <button class="registr">Зарегистрироваться</button>
+                    <button class="registr" id="regLinkBtn">Зарегистрироваться</button>
                     <p>После регистрации вы получите доступ ко всем возможностям prikoli77 =)</p>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-reg hiden">
+            <div class="pop-up-reg-container">
+                <div class="pop-up-reg-body">
+                    <div class="pop-up-body-signin-close" id="reg_close">&#10006</div>
+                    <p>Регистрация prikoli77</p>
+                    <form onsubmit="return false;" id="signup_form">
+                        <input type="text" placeholder="Логин" id="signup_login">
+                        <input type="text" placeholder="Пароль" id="signup_pass">
+                        <button class="regBtn" id="regBtn">Регистрация</button>
+                    </form>
+                    <div class="reg__ok hiden" id='reg__ok'>
+                        <p>Регистрация прошла успешно, перезагрузите пожалуйста страницу =)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="log-out hiden">
+            <div class="log-out-container">
+                <div class="log-out-body">
+                    <p>Вы точно хотите выйти?</p>
+                    <div class="log-out-bigbox">
+                        <div class="log-out-chose" id="log-out-yes">Да</div>
+                        <div class="log-out-chose" id="log-out-nope">Нет</div>
+                    </div>
                 </div>
             </div>
         </div>
