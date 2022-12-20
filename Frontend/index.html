@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ржач77</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1>РЖАЧ77.</h1>
+            <div class="menu-block">
+                <div class="menu-btn">
+                    <span></span>
+                </div>
+                <div class="menu-nav ">
+                    <div class="menu-nav__link" id="home">Домой</div>
+                    <div class="menu-nav__link" id="login">Вход</div>
+                    <div class="menu-nav__link" id="contacts">Контакты</div>
+                </div>
+            </div>
+        </header>
+        <div class="ground">
+            <div class="placeholder"></div>
+        </div>
+        <div class="pop-up hiden">
+            <div class="pop-up__bg"></div>
+            <div class="pop-up-container">
+                <div class="pop-up-body-signin">
+                    <p>Вход prikoli77</p>
+                    <form onsubmit="return false;"  action="" id="signin_form">
+                        <input type="text" placeholder="Логин" id="signin_login">
+                        <input type="text" placeholder="Пароль" id="signin_pass">
+                        <button class="login" id="signin_btn">Войти</button>
+                    </form>
+                    <div class="pop-up-body-signin-close">&#10006</div>
+                    <div class="reg__ok hiden" id="signin__ok">
+                        <p>Вход выполнен успешно, пожалуйста перезагрузите страницу =)</p>
+                    </div>
+                </div>
+                <div class="pop-up-body-signup">
+                    <button class="registr" id="regLinkBtn">Зарегистрироваться</button>
+                    <p>После регистрации вы получите доступ ко всем возможностям prikoli77 =)</p>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-reg hiden">
+            <div class="pop-up-reg-container">
+                <div class="pop-up-reg-body">
+                    <div class="pop-up-body-signin-close" id="reg_close">&#10006</div>
+                    <p>Регистрация prikoli77</p>
+                    <form onsubmit="return false;" id="signup_form">
+                        <input type="text" placeholder="Логин" id="signup_login">
+                        <input type="text" placeholder="Пароль" id="signup_pass">
+                        <button class="regBtn" id="regBtn">Регистрация</button>
+                    </form>
+                    <div class="reg__ok hiden" id='reg__ok'>
+                        <p>Регистрация прошла успешно, перезагрузите пожалуйста страницу =)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="log-out hiden">
+            <div class="log-out-container">
+                <div class="log-out-body">
+                    <p>Вы точно хотите выйти?</p>
+                    <div class="log-out-bigbox">
+                        <div class="log-out-chose" id="log-out-yes">Да</div>
+                        <div class="log-out-chose" id="log-out-nope">Нет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up_cont hiden">
+            <div class="pop-up_contacts__bg"></div>
+            <div class="pop-up_cont_container">
+                <div class="pop-up_contacts">
+                    <div class="pop-up_contacts_close">&#10006</div>
+                    <h1>Наши контакты</h1>
+                    <div class="text_box">
+                        <div class="mini_text_box">
+                            <h2>Frontend</h2>
+                            <ul>
+                                <li>Верстка на HTML CSS/SCSS</li>
+                                <li>Знание JavaScript</li>
+                                <li>Знание и опыт работы с Vue.js</li>
+                                <li>Опыт работы с Git, знание основ</li>
+                                <li>Знание SCSS</li>
+                                <li>Опыт работы в команде</li>
+                                <li>Базовое знание Python и алгоритмов</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://vk.com/ilaswe">VK</a>
+                                <a href="https://github.com/kant0rin">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="mini_text_box">
+                            <h2>Backend</h2>
+                            <ul>
+                                <li>Знание JavaScript, Node.js</li>
+                                <li>Знание и опыт работы на Express.js</li>
+                                <li>Знание и опыт работы с PostgreSQL</li>
+                                <li>Знание и опыт работы с алгоритмами</li>
+                                <li>Опыт работы с Git</li>
+                                <li>Опыт работы в команде</li>
+                                <li>Базовое знание Docker</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://vk.com/flex_eto_moya_jizn">VK</a>
+                                <a href="https://github.com/acdefgg">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="dislike hiden feedback_button">
+                <img src="dislike%20neon%20png.png" title='Не нравится' class="button_dislike">
+                <div class="dislike_info">0</div>
+            </div>
+            <div class="button-prikol" title="Получить прикол">ПОЛУЧИТЬ ПРИКОЛ</div>
+            <div class="like hiden feedback_button">
+                <div class="like_info">0</div>
+                <img class='button_like' title="Нравится" src="like%20neon%20png.png">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="site">Сделаем сайт за ОЧЕНЬ дорого</div>
+            <div class="pustota"></div>
+            <a class="vk" href="http://vk.com/ilaswe">https://vk.com/ilaswe</a>
+            <a class="vk" href="https://vk.com/flex_eto_moya_jizn">https://vk.com/flex_eto_moya_jizn</a>
+        </footer>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
